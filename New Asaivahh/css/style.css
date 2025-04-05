@@ -1,0 +1,368 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+/* font*/
+
+.dancing-script{
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* header image */ 
+.wrapper {
+  height: 100vh;
+  width: 100%;
+overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.container {
+overflow-x: hidden;
+  overflow-y: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/food3.jpg);
+  background-size: cover;
+  z-index: 0;
+}
+
+/* header background image transparent */ 
+
+.overlay {
+  position: relative; 
+  width: 100%; 
+  height: 100%; 
+  background-color: rgba(0,0,0,0.6); 
+}
+
+
+/* header image rotation */ 
+
+.rotate {
+  position: absolute;
+  top: 22%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 500px;
+  background: url(../images/briyani.png);
+  animation: rotateAnimation 15s linear infinite;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+@keyframes rotateAnimation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* nav bar */ 
+
+.nav-bar {
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  position: relative; 
+  width: 100%;
+  font-size: larger;
+  color: gray;
+}
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 19px 0px;
+}
+
+li {
+  display: inline;
+  margin-top: 15px;
+}
+
+li a {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  margin: 0px 0px 0px 25px;
+  padding: 35px 0px;
+  text-decoration: none;
+  z-index: 10;
+}
+
+li a:hover {
+  color: #fea116;
+}
+
+/* logo */ 
+
+#logo-photo {
+  width: 250px;
+  color: #fea116;
+}
+
+/* header text */ 
+
+.text-upper {
+  position: absolute;
+  top: 50%;
+  left: 32%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: white;
+}
+
+.text-lower {
+  position: absolute;
+  top: 60%;
+  left: 32%;
+  transform: translate(-50%, -50%);
+  font-size: 33px;
+  color: white;
+}
+
+
+/*about*/
+
+.our-story {
+    background-image: url(../images/4.png); 
+    background-size: cover;
+    background-position: center;
+    padding: 80px 10%;
+}
+
+.story-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.image-container img {
+    width: 400px;
+    border-radius: 10px;
+  
+}
+
+.content-container {
+    width: 55%;
+}
+
+.content-container h2 {
+    font-size: 32px;
+    color: #7e011f;
+    margin-bottom: 15px;
+    font-family: 'Rubik', sans-serif;
+   font-style: italic;
+}
+
+.content-container p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+     font-family: 'Rubik', sans-serif;
+   text-align: justify;
+}
+
+/*Team*/
+
+.team{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/4.png);  
+    background-size: cover;
+    background-position: center;
+}
+
+.team h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 45px;
+    margin-bottom: 10px;
+  font-family: "Dancing Script", cursive;
+}
+
+.team h1 span{
+    color: #7e011f;
+    margin-left: 15px;   
+}
+
+.team .team_box{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 13%;
+}
+
+.team .team_box .profile{
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    margin: 0 15px;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+    transition: 0.4s;
+}
+
+.team .team_box .profile:hover{
+    border-radius: 20px;
+    height: 320px;
+}
+
+.team .team_box .profile img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+    z-index: 2;
+    transition: 0.4s;
+}
+
+.team .team_box .profile:hover img{
+    border-radius: 20px;
+    margin-top: -230px;
+}
+
+.team .team_box .profile .info{
+    position: absolute;
+    text-align: center;
+    border-top:none;
+    transition: 0.4s;
+   display: none;
+   border-radius: 0 0 20px 20px;
+}
+
+.team .team_box .profile:hover .info{
+    top: 38%;
+   display:block;
+
+}
+.team .team_box .profile .info .name{
+    color: #fac031;
+    margin-bottom: 15px;
+}
+.team .team_box .profile .info .bio{
+    width: 70%;
+    text-align: center;
+    margin: 0 auto 10px auto;
+}
+
+.team .team_box .profile .info .team_icon i{
+    margin: 10px 5px 5px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.team .team_box .profile .info .team_icon i:hover{
+    color: #fac031;
+}
+
+
+/*google maps*/
+
+  .google-map1 {
+    padding-bottom: 30%;
+    position: relative;
+}
+
+.google-map1 iframe {
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 10;
+    position: absolute;
+}
+
+.google-map {
+    padding-bottom: 50%;
+    position: relative;
+}
+
+.google-map iframe {
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 10;
+    position: absolute;
+}
+
+
+/* footer part begins */
+
+.footer-part{
+  width: 100%;
+  height: 40vh;
+  background-color: #7e011f;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.heading-part{
+  margin: 12px;
+  padding: 15px;
+  font-family: "Dancing Script", cursive;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 35px;
+  color: #fea116;
+  text-align: center;
+}
+
+.inside-text{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.social-media i{
+  width: 15px;
+}
+
+
+@media (max-width: 768px) {
+    .story-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-container img {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .content-container {
+        width: 100%;
+        margin-top: 20px;
+    }
