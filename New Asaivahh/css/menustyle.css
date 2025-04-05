@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Open+Sans:wght@400;600;700&display=swap");
+body {
+font-family: "Open Sans", sans-serif;
+  color: #0c0c0c;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+.layout_padding {
+  padding: 90px 0;
+}
+
+
+h1,
+h2 {
+  font-family: 'Dancing Script', cursive;
+}
+
+/* font*/
+
+.dancing-script{
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+/* nav bar */ 
+
+.nav-bar {
+  z-index: 1000;
+  margin-top: 0;
+  top: 0;
+  left: 0;
+  position: relative; 
+  width: 100%;
+  font-size: larger;
+  color: gray;
+  background-color: #7e011f;
+}
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: none;
+  padding: 19px 0px;
+}
+
+li {
+  display: inline;
+  margin-top: 15px;
+}
+
+li a {
+ font-family: 'Times New Roman', Times, serif  !important; 
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  margin: 0px 0px 0px 25px;
+  padding: 35px 0px;
+  text-decoration: none;
+  z-index: 10;
+}
+
+li a:hover {
+  color: #fea116;
+  text-decoration: none;
+}
+
+/* logo */ 
+
+#logo-photo {
+  width: 250px;
+  color: #fea116;
+}
+
+
+
+/*our menu heading*/
+
+.heading_container.heading_center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+/* menu list*/
+
+.food_section .filters_menu {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style-type: none;
+  margin: 45px 0 20px 0;
+}
+
+.food_section .filters_menu li {
+  padding: 7px 25px;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+/* menu active button*/
+
+.food_section .filters_menu li.active {
+  background-color: #7e011f;
+  color: #ffffff;
+}
+
+/* Container box */
+.food_section .box {
+  position: relative;
+  margin-top: 25px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 350px; /* Adjust height as needed */
+}
+
+/* Upper part: Image container */
+.food_section .box .img-box {
+  position: relative;
+  width: 100%;
+  height: 50%; /* Make it cover the upper part */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f1ebeb;
+  border-radius: 15px 15px 0 0; /* Only round the top */
+  overflow: hidden;
+}
+
+/* Image itself */
+.food_section .box .img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures full coverage without distortion */
+  transition: all 0.2s ease;
+}
+
+/* Lower part: Description */
+.food_section .box .detail-box {
+  flex: 1; /* Fill the remaining space */
+  padding: 25px;
+  background: #7e011f;
+  color: #ffffff;
+  border-radius: 0 0 15px 15px; /* Only round the bottom */
+}
+
+/* Text styles */
+.food_section .box .detail-box h5 {
+  font-weight: 600;
+}
+
+.food_section .box .detail-box p {
+  font-size: 15px;
+}
+
+.food_section .box .detail-box h6 {
+  margin-top: 10px;
+}
+
+
+/* footer part begins */
+
+.footer-part{
+  width: 100%;
+  height: 40vh;
+  background-color: #7e011f;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.heading-part{
+  margin: 12px;
+  padding: 15px;
+  font-family: "Dancing Script", cursive;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 35px;
+  color: #fea116;
+  text-align: center;
+}
+
+.inside-text{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.social-media i{
+  width: 15px;
+}
+
+
